@@ -5,7 +5,7 @@ $reqCreateDatabase = "CREATE DATABASE IF NOT EXISTS Sources";
 $insertDatabase = mysqli_query($cnx, $reqCreateDatabase);
 
 if (!$insertDatabase) {
-    die("Error creating database: " . mysqli_error($cnx));
+    die("Erreur " . mysqli_error($cnx));
 }
 
 
