@@ -1,0 +1,20 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1,label{
+    color: white;
+}
+label{
+    display: inline-block;
+}
+table,td,th{
+    border-collapse: collapse;
+    border:2px solid black;
+    background-color: aliceblue;
+    height: 40px;
+
+}
+th{
+    width : 300px;
+    background-color: cadetblue;
+}

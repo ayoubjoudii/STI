@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="tous.css">
+</head>
+<body>
+    <h1>Saisie des Notes</h1>
+    <fieldset><legend>Les Notes:</legend>
+    <form action="ajouter.php" method="post" onsubmit="return valider()">
+        <div><label for="ID">ID: </label> <input  type="text" name="ID" id="ID"></div>
+        <div><label for="nom">Nom Prenom: </label> <input type="text" name="nom" id="nom"></div>
+        <div><label for="nc">Note de Controle: </label> <input  type="text"  name="nc" id="nc"></div>
+        <div><label for="ns">Note de synthese: </label> <input  type="text"  name="ns" id="ns"></div>
+        <div><input type="submit" value="ajouter" id="ajt">
+        <input type="reset" value="annuler" id="">
+    </form>
+</fieldset>
+<script src="verif.js"></script>
+</body>
+</html>
