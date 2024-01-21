@@ -18,12 +18,11 @@
                 <?php 
                 require("connexion.php");
                 $req = "SELECT id FROM eleves ";
-                $res = mysqli_query($cn,$res);
+                $res = mysqli_query($cn,$req);
                 while ($ligne = mysqli_fetch_array($res)){
-                    echo '<option value="">'.$ligne['id'].'</option>';
+                    echo '<option >'.$ligne['id'].'</option>';
                 }
                 ?> 
-                <option value="">12123312</option>
             </select></div>
             <input type="submit" value="modifier" id="mod">
             <input type="reset" value="annuler" id="">
