@@ -29,7 +29,7 @@
             <input type="reset" value="annuler" id="">
         </form>
     </fieldset>
-    <script src="donnes.js">
+    <script src="controle.js">
     </script>
 </body>
 </html>
