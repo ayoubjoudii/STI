@@ -23,7 +23,7 @@
                     echo '<option value="">'.$ligne['id'].'</option>';
                 }
                 ?> 
-                <option value="">nyesss</option>
+                <option value="">12123312</option>
             </select></div>
             <input type="submit" value="modifier" id="mod">
             <input type="reset" value="annuler" id="">
