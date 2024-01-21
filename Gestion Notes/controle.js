@@ -33,7 +33,13 @@ function valider(){
     }
 }
 function verif(){
-    return !(choix.selectedIndex == 0)
+    if (choix.selectedIndex == 0){
+        alert('Choisir un id');
+        return false
+    }
+    else{
+        return true
+    }
 }
 function ajout(){
     
