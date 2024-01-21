@@ -1,10 +1,22 @@
-const frame = document.getElementById("section")
-const id = document.getElementById("ID") 
-const nom = document.getElementById("nom") 
-const nc = document.getElementById("nc") 
-const ns = document.getElementById("ns") 
-const choix = document.getElementById("liste")
+let frame = document.getElementById("section")
+let id = document.getElementById("ID") 
+let nom = document.getElementById("nom") 
+let nc = document.getElementById("nc") 
+let ns = document.getElementById("ns") 
+let choix = document.getElementById("liste")
 
+function decimal(){
+    if(isNaN(parseFloat(nc.value)) ||
+    isNaN(parseFloat(ns.value)) ||
+    parseFloat(nc.value) < 0.00 ||
+    parseFloat(nc.value) > 20.00 ||
+    parseFloat(ns.value) < 0.00 ||
+    parseFloat(ns.value) > 20.00) {
+        alert("decimaux et entre 0.00 et 20.00")
+        return false
+    }
+    
+}
 function espace(ch){
     let cn = 0;
     for (let i = 0; i < ch.length; i++) {
@@ -22,15 +34,7 @@ function valider(){
         alert("nom et prenom max 41 et espace");
         return false
     }
-    else if(isNaN(parseFloat(nc.value)) ||
-    isNaN(parseFloat(ns.value)) ||
-    parseFloat(nc.value) < 0.00 ||
-    parseFloat(nc.value) > 20.00 ||
-    parseFloat(ns.value) < 0.00 ||
-    parseFloat(ns.value) > 20.00) {
-        alert("decimaux et entre 0.00 et 20.00")
-        return false
-    }
+    else return decimal()
 }
 function verif(){
     if (choix.selectedIndex == 0){

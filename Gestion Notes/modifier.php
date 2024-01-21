@@ -20,7 +20,7 @@
                 $req = "SELECT id FROM eleves ";
                 $res = mysqli_query($cn,$req);
                 while ($ligne = mysqli_fetch_array($res)){
-                    echo '<option >'.$ligne['id'].'</option>';
+                    echo '<option value="'.$ligne['id'].'" >'.$ligne['id'].'</option>';
                 }
                 ?> 
             </select></div>
