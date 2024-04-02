@@ -1,0 +1,27 @@
+a{
+    text-decoration: none;
+    margin: 7px;
+    font-size: large;
+    font-weight: 600;
+    color:blueviolet;
+}
+h2{
+    color: darkgreen;
+}
+nav{
+    text-align: right;
+}
+header{
+    background-color:#a1bad6 ;
+}
+h1{
+    color: #612a37;
+}
+span{
+    color: #961a2e;
+}
+footer{
+    text-align: center;
+    padding: 10px ;
+    background-color:#a1bad6
+}
