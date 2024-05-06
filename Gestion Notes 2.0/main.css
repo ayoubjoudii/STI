@@ -1,0 +1,25 @@
+nav{
+    float: left;
+    background-color: blue;
+    width: 25%;
+    height: 450px;
+    border-radius: 10px;
+}
+a{
+    display: block;
+    margin: 40px;
+    text-decoration: none;
+    color: aliceblue;
+}
+h1{
+    display: inline-block;
+}
+header{
+    background-color: aqua;
+}
+iframe{
+    width: 75%;
+    height: 450px;
+    border-radius: 10px;
+}
+
