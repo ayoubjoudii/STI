@@ -1,0 +1,29 @@
+nav{
+    float: left;
+    width: 25%;
+    height: 450px;
+    background-color: aqua;
+}
+label{
+    display: inline-block;
+    width: 150px;
+    padding: 5px;
+}
+iframe{
+    float: right;
+    width: 74%;
+    height: 450px;
+    background-color: aliceblue;
+}
+table{
+    
+    border-collapse: collapse;
+}
+th , td{
+    border: 1px solid ;
+
+}
+a{
+    display: block;
+    text-decoration: none ;
+}

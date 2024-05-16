@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Enregistrement d'un testeur: </legend>
+        <form action="enregistrement.php" method="post" onsubmit="return verif1()">
+            <div>
+                <label for="">N permis</label>
+                <input type="text" name="np" id="np">
+            </div>
+            <div>
+                <label for="">Nom:</label>
+                <input type="text" name="nom" id="nom">
+            </div>
+            <div><label for="">Prenom:</label><input type="text" name="prenom" id="prenom"></div>
+            <div><label for="">Genre:</label><input type="radio" name="nem" id="F" value="Female">Female<input type="radio" name="nem" id="M" value="Male">Male</div>
+            <div>
+                <input type="reset" value="annuler" id="">
+                <input type="submit" value="ajouter" id="">
+            </div>
+            
+        </form>
+    </fieldset>
+<script src="controle.js"></script>
+</body>
+
+</html>
