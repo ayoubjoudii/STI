@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mesStyles.css">
+    <script src="controles.js"></script>
+</head>
+<body>
+<fieldset>
+    <legend>ajout d'un client</legend>
+    <form action="ajout.php" method="post" onsubmit="return verif1()">
+    <table>
+        <tr>
+            <td><label for="">Categorie</label></td>
+            <td><select name="cat" id="cat">
+                <option value="0">Sélectionner une catégorie</option>
+                <option value="1">Robe soirée</option>
+                <option value="2">Robe de mariée</option>
+                <option value="3">Coftan</option>
+                <option value="4">Costume</option>
+                <option value="5">Jubba</option>
+            </select></td>
+        </tr>
+    <tr>
+    <td><label for="">Description</label></td>
+            <td><input type="text" class="c1" name="des" id="des"></td>
+    </tr>
+    <tr>
+        <td><label for="">Taille</label></td>
+                <td><input type="radio" name="taille" value="S" id="s">S
+                    <input type="radio" name="taille" id="m" value="M">M
+                    <input type="radio" name="taille" id="l" value="L">L
+                    <input type="radio" name="taille" id="xl" value="XL">XL
+                </td>                
+        </tr>
+        <tr>
+            <td><label for="">Prix de location</label></td>
+                    <td><input type="number" class="c1" name="prix" id="prix">DT</td> 
+            </tr>
+            <tr>
+                <td><input type="reset" value="Annuler">
+                <input type="submit" value="Ajouter"></td>
+            </tr>
+    </table>
+    </form>
+</fieldset>    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mesStyles.css">
+    <script src="controles.js"></script>
+</head>
+<body>
+<fieldset>
+    <legend>Location d'un habit</legend>
+    <form action="location.php" method="post" onsubmit="return verif2()">
+    <table>
+<tr>
+    <td><label for="">code Habit</label></td>
+    <td><input type="number" class="c1" name="codeH" id="codeH"></td>
+</tr>
+<tr>
+    <td><label for="">cin Client</label></td>
+    <td><input type="text" class="c1" name="cinClient" id="cinClient"></td>
+</tr>
+<tr>
+    <td><label for="">Durée location</label></td>
+    <td><input type="number" class="c1" name="dureeLoc" id="dureeLoc"></td>
+</tr>
+
+            <tr>
+                <td><input type="reset" value="Annuler">
+                <input type="submit" value="Ajouter"></td>
+            </tr>
+    </table>
+    </form>
+</fieldset>    
+</body>
+</html>
