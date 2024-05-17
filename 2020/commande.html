@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <fieldset>
+        <legend>Commande de pizzas: </legend>
+        <form action="commande.php" method="post" onsubmit="return verif2()">
+            <div>
+                <label for="">Type De pizzas: </label>
+                <select name="sel" id="sel">
+                    <option value="">Choisir une pizza</option>
+                    <option value="Fruits de mer">Fruits de mer</option>
+                    <option value="Margherita">Margherita</option>
+                    <option value="Napilotienne">Napilotienne</option>
+                    <option value="Neptune">Neptune</option>
+                    <option value="Royale">Royale</option>
+                </select>
+                <label for="">Quantite</label>
+                <input type="text" name="qte" id="qte">
+            </div>
+            <div>
+                <label for="">Tel: </label>
+                <input type="text" name="tel" id="tel">
+                <label for="">Mot de passe: </label>
+                <input type="password" name="mdp" id="mdp">
+            </div>
+            <div>
+                <input type="reset" name="" id="">
+                <input type="submit" name="" id="">
+            </div>
+        </form>
+    </fieldset>
+    <script src="biblio.js"></script>    
+</body>
+</html>
