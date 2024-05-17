@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Sondage: </legend>
+        <form action="sondage.php" method="post" onsubmit="return test()">
+            <table>
+            <tr>Authentification/Inscription</tr>
+            <tr>
+                <td >@Mail : </td>
+                <td><input type="mail" name="mail" id="mail"></td>
+            </tr>
+            <tr>
+                <td >Mot de passe</td>
+                <td><input type="mdp" name="mdp" id="mdp"></td>
+            </tr>
+            <tr>
+                <td >Genre : </td>
+                <td>
+                    <select name="sel" id="sel">
+                        <option value="">indiquer votre reponse</option>
+                    <option value="M">Masculin</option>
+                    <option value="F">Feminin</option>
+                                </select>
+                </td>
+        </tr>
+        <tr><td>Les resaux sociaux</td></tr>
+        <tr>
+            <td >N°</td>
+            <td >Question/Affirmation</td>
+            <td >Oui</td>
+            <td >Non</td>
+            <td >Sans avis</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Les informations partagees sur les resaux sociaux sont fiables</t>
+            <td><input type="radio" name="1" value="1O" id="O"></td>
+            <td><input type="radio" name="1" value="1N" id="N"></td>
+            <td><input type="radio" name="1" value="1S" id="S"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>L'usage des resaux sociaux par les enfants doit etre sous le cntrole parental</t>
+            <td><input type="radio" name="2" value="2O" id="O"></td>
+            <td><input type="radio" name="2" value="2N" id="N"></td>
+            <td><input type="radio" name="2" value="2S" id="S"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Les rexaux sociaux deviennet une necessite puor les citoyens</t>
+            <td><input type="radio" name="3" value="3O" id="O"></td>
+            <td><input type="radio" name="3" value="3N" id="N"></td>
+            <td><input type="radio" name="3" value="3S" id="S"></td>
+        </tr>
+        <tr>
+            <td><input type="reset" name="" id=""></td>
+            <td><input type="submit" name="" id=""></td>
+        </tr>
+    </table>
+    </form>
+    </fieldset>
+    <script src="controle.js"></script>
+</body>
+</html>
