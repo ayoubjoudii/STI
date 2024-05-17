@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="messtyles.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Ajout d'un habit</legend>
+        <form action="ajout.php" method="post" onsubmit="return verif1()">
+            <div>
+                <label for="">Categorie:</label>
+                <select name="sel" id="sel">
+                    <option value="">selectionner une Categorie</option>
+                    <option value="1">Robe de soiree</option>
+                    <option value="2">Robe de mariee</option>
+                    <option value="3">Caftan</option>
+                    <option value="4">Costum</option>
+                    <option value="5">Jebba</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Description:</label>
+                <input type="text" name="desc" id="desc">
+            </div>
+            <div>
+                <label for="">taille</label>
+                <input type="radio" name="t" value="s" id="s"> S 
+                <input type="radio" name="t" value="m" id="m"> M
+                <input type="radio" name="t" value="l" id="l"> L 
+                <input type="radio" name="t" value="xl" id="xl"> XL
+            </div>
+            <div>
+                <label for="">Prix de location: </label>
+                <input type="number" name="prx" id="prx"> DT 
+            </div>
+            <div>
+                <input value="annuler" type="reset" name="" id="">
+                <input value="valider" type="submit" name="" id="">
+            </div>
+        </form>
+    </fieldset>
+    <script src="controles.js"></script>
+</body>
+</html>

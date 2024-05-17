@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="messtyles.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Location d'un habit</legend>
+        <form action="location.php" method="post" onsubmit="return verif2()">
+            <div>
+                <label for="">code habit</label>
+                <input type="text" name="codehab" id="codehab">
+            </div>
+            <div>
+                <label for="">cin client</label>
+                <input type="text" name="cin" id="cin">
+            </div>
+            <div>
+                <label for="">duree location</label>
+                <input type="text" name="duree" id="duree">
+            </div>
+            <div>
+                <input type="submit" name="" id="">
+                <input type="reset" name="" id="">
+            </div>
+        </form>
+    </fieldset>
+    <script src="controles.js"></script>
+</body>
+</html>
