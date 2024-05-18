@@ -8,21 +8,32 @@ if(mysqli_num_rows($res0) == 0){
     echo 'aucune activite enre';
 }
 else{
-    echo '<table>
+    echo '
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="mesStyles.css" rel="stylesheet" ></link>
+</head>
+<body>
+    <table>
     <tr>
         <th>Date et heure </th>
         <th>Magnitude </th>
         <th>nom region </th>
-    </tr>
-</table>';
-while($t = mysqli_fetch_array($res0)){
-    $nr= $t["numreg"];
-    $res = mysqli_query($cnx,"select nomreg from region  where numreg = '$nr'  ");
-    $nomreg = mysqli_fetch_array($res)[0];
-    echo '<tr> <td>'.$t["dateseisme"].'</td>';
-    echo '<td>'.$t["magnitude"].'</td>';
-    echo '<td>'.$nr.'</td> </tr>';
-}    
+    </tr>';
+    while($t = mysqli_fetch_array($res0)){
+        $nr= $t["numreg"];
+        $res = mysqli_query($cnx,"select nomreg from region  where numreg = '$nr'  ");
+        $nomreg = mysqli_fetch_array($res)[0];
+        echo '<tr> <td>'.$t["dateseisme"].'</td> <td>'.$t["magnitude"].'</td> <td>'.$nomreg.'</td> </tr>';
+    }    
+    
+    echo '</table> </body>
+</html>';
 }
 
 ?>
+

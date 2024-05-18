@@ -81,13 +81,13 @@ function verif1()
 
 function verif2()
 {
-    let station=document.getElementById('station').selectedIndex
+    let stat =document.getElementById('stat').selectedIndex
     let ann2 = document.getElementById('2022').checked         
     let ann3 = document.getElementById('2023').checked         
     let ann4 = document.getElementById('2024').checked         
         //Compléter le reste de la fonction
 
-    if(station==0)
+    if(stat ==0)
     {
         alert("la sélection d'une station est obligatoire")
         return false

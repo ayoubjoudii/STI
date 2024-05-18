@@ -20,7 +20,7 @@ if(mysqli_num_rows($res)==0){
 }
 else{
     $numreg = mysqli_fetch_array($res)["numreg"];
-        $res = mysqli_query($cnx,"select * from seisme where codesta = '$stat' and numreg = '$numregion' and dateseisme ='$ds' ");
+        $res = mysqli_query($cnx,"select * from seisme where codesta = '$stat' and numreg = '$numreg' and dateseisme ='$ds' ");
         if(mysqli_num_rows($res)!=0){
             echo "activite deja enregistre";
         }
