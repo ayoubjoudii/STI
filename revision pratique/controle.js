@@ -20,20 +20,30 @@ function AlphaEspace(ch)
 
 function verif1()
 {
-    sta=document.getElementById('station').selectedIndex
-
+    let sta=document.getElementById('station').selectedIndex
+    let nm=document.getElementById('nm').value
+    let ds=document.getElementById('ds').value
+    let hs=document.getElementById('hs').value
+    let mag=document.getElementById('mag').value
+    let lat=document.getElementById('lat').value
+    let long=document.getElementById('long').value
         //Compléter le reste de la fonction
-
-
+    d = new Date()
+    dss = new Date(ds)
+    
     resultat=true
     if(sta==0)
     {
         alert("La sélection d'une station est obligatoire")
         resultat=false
     }
-
-        //Compléter le reste de la fonction
-
+    if(nm=="" || nm>50 || !AlphaEspace(nm) ){
+        alert("nom region")
+        resultat=false
+    }
+    if(!(dss < d)){
+        alert("date inf a date")
+    }
     return resultat
 }
 
