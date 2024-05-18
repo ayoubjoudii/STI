@@ -1,6 +1,8 @@
 table{
     border-collapse: separate;
+    width: 100%;
 }
-td{
+td,th{
+    font-size: large;
     border: 1px solid red;
 }
