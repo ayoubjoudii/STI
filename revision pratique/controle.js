@@ -80,8 +80,10 @@ function verif1()
 
 function verif2()
 {
-    station=document.getElementById('station').selectedIndex
-                
+    let station=document.getElementById('station').selectedIndex
+    let ann2 = document.getElementById('2022').checked         
+    let ann3 = document.getElementById('2023').checked         
+    let ann4 = document.getElementById('2024').checked         
         //Compléter le reste de la fonction
 
     resultat=true
@@ -90,7 +92,10 @@ function verif2()
         alert("la sélection d'une station est obligatoire")
         resultat=false
     }
-   
+    if(!(ann2 || ann3 || ann4)){
+        alert("selectioner pls")
+        resultat = false
+    }
 
         //Compléter le reste de la fonction
 
