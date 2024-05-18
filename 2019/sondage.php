@@ -8,11 +8,15 @@ $q1 = $_POST["1"];
 $q2 = $_POST["2"];
 $q3 = $_POST["3"];
 
+$resm = mysqli_query($cnx,"select * from participant where mail = '$mail' and mdp = '$mdp' ");
+if(mysqli_num_rows($resm)== 0){
+
+}
 $resm = mysqli_query($cnx,"select * from participant where mail = '$mail' and mdp <> '$mdp' ");
 if(mysqli_num_rows($resm)!=0){
     die("erreur d'authentification");
 }
-$res0 = mysqli_query($cnx,"select idparticipant from participant where mail = '$mail' ");
+$res0 = mysqli_query($cnx,"select idparticipant from participant where mail = '$mail' ") or die("3amer yadi");
 $id = mysqli_fetch_array($res0)[0];
 $ress = mysqli_query($cnx,"select * from reponse where nums = '1' and idparticipant = '$id' ");
 if (mysqli_num_rows($ress)!=0){

@@ -2,25 +2,25 @@ function valid(ch){
     let p = ch.indexOf('@')
     let ch1 = ch.substr(0,p)
     let p1 = ch.indexOf('.')
-    let ch2 = ch.substr(p+1,p1-p)
+    let ch2 = ch.substr(p+1,p1-p-1)
     let ch3 = ch.substr(p1+1)
-    let test1 = ch1.length>=2
-    let test2 = ch2.length>=2
+    let test1 = ch1.length>=3
+    let test2 = ch2.length>=3
     let test3 = ch3.length>=2 && ch3.length<=4
 
     for (let index = 0; index < ch1.length; index++) {
-        if (!(("0"<=ch1[index] && ch1[index]<="9") || ("A"<=ch1[index].toUpperCase && ch1[index].toUpperCase<="Z" ))){
+        if (!(("0"<=ch1[index] && ch1[index]<="9") || ("A"<=ch1[index].toUpperCase() && ch1[index].toUpperCase()<="Z" ))){
             test1 = false
         }    
     }
 
     for (let index = 0; index < ch2.length; index++) {
-        if (!(("0"<=ch2[index] && ch2[index]<="9") || ("A"<=ch2[index].toUpperCase && ch2[index].toUpperCase<="Z" ))){
+        if (!(("0"<=ch2[index] && ch2[index]<="9") || ("A"<=ch2[index].toUpperCase() && ch2[index].toUpperCase()<="Z" ))){
             test2 = false
         }    
     }
     for (let index = 0; index < ch3.length; index++) {
-        if (!("A"<=ch3[index].toUpperCase && ch3[index].toUpperCase<="Z" )){
+        if (!("A"<=ch3[index].toUpperCase() && ch3[index].toUpperCase()<="Z" )){
             test3 = false
         }    
     }
