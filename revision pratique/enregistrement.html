@@ -7,41 +7,42 @@
 </head>
 <body>
     <h1>Enregistrement d'une nouvelle activite</h1>
-    <div>
-        <label for="">Station: </label>
-        <select name="cit" id="cit">
-            <option value="">choisir une station</option>
-            <option value="Trozza">Trozza</option>
-            <option value="Zaghouan">Zaghouan</option>
-            <option value="El hania">El hania</option>
-            <option value="Sidi bousaid">Sidi bousaid</option>
-        </select>
-        <label for="">Nom Region: </label>
-        <input type="text" name="" id="">
-    </div>
-    <div>
-        <label for="">Date Seisme: </label>
-        <input type="date" name="" id="">
-        <label for="">Heure Seisme: </label>
-        <input type="time" name="" id="">
-
-    </div>
-    <div>
-        <label for="">Magnitude: </label>
-        <input type="text" name="" id="">
-    </div>
-    <div>
-        <label for="">Latitude: </label>
-        <input type="text" name="" id="">
-
-    </div>
-    <div>
-        <label for="">Longitude</label>
-        <input type="text" name="" id="">
-    </div>
-    <div>
-        <input type="reset" value="annuler" name="" id="">
-        <input type="submit" value="enregistrer" name="" id="">
-    </div>
+    <form action="enregistrement.php" method="post" onsubmit="return verif1()">
+        <div>
+            <label for="">Station: </label>
+            <select name="cit" id="cit">
+                <option value="">choisir une station</option>
+                <option value="Trozza">Trozza</option>
+                <option value="Zaghouan">Zaghouan</option>
+                <option value="El hania">El hania</option>
+                <option value="Sidi bousaid">Sidi bousaid</option>
+            </select>
+            <label for="">Nom Region: </label>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <label for="">Date Seisme: </label>
+            <input type="date" name="" id="">
+            <label for="">Heure Seisme: </label>
+            <input type="time" name="" id="">
+        </div>
+        <div>
+            <label for="">Magnitude: </label>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <label for="">Latitude: </label>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <label for="">Longitude</label>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <input type="reset" value="annuler" name="" id="">
+            <input type="submit" value="enregistrer" name="" id="">
+        </div>
+    </form>
+    <script src="controle.js"></script>
 </body>
 </html>
