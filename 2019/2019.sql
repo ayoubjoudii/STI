@@ -79,7 +79,7 @@ CREATE TABLE `reponse` (
   `numq` int(11) NOT NULL,
   `nums` int(11) NOT NULL,
   `idparticipant` int(11) NOT NULL,
-  `rep` char(1) DEFAULT NULL
+  `rep` char(1) DEFAULT NULL CHECK(`rep` in ('N','O','S'))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
