@@ -1,0 +1,49 @@
+/*Code CSS de la page Index.html*/
+header
+{
+    width: 1250px;
+    height: 100px;
+    background-color: bisque;
+}
+nav
+{
+    width: 250px;
+    height:600px;
+    background-color: bisque;
+}
+section
+{
+    width: 690px;
+    height: 600px;
+
+}
+iframe
+{
+    width: 100%;
+    height: 100%;
+}
+aside
+{
+    width: 295px;
+    height: 600px;
+    background-color: bisque;
+}
+img
+{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    box-shadow: 3px 3px 2px black,-3px -3px 2px black;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+h1 
+{
+    text-align: center;
+    color:red;
+}
+h1:hover{
+    transform: skew(-45%);
+    text-shadow: 15px 15px 5px blue;
+}
