@@ -86,3 +86,7 @@ function test(){
         return false
     }
 }
+function verifs(){
+    let sond = document.getElementById('sond')
+    return !(sond.selectedIndex == 0)
+}
