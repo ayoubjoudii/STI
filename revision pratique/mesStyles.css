@@ -1,20 +1,22 @@
 /*Code CSS de la page Index.html*/
 header
 {
-    width: 1250px;
+    width: 100%;
     height: 100px;
     background-color: bisque;
 }
 nav
 {
-    width: 250px;
+    width: 20%;
     height:600px;
     background-color: bisque;
+    float: left;
 }
 section
 {
-    width: 690px;
+    width: 60%;
     height: 600px;
+    float: left;
 
 }
 iframe
@@ -24,9 +26,10 @@ iframe
 }
 aside
 {
-    width: 295px;
+    width: 20%;
     height: 600px;
     background-color: bisque;
+    float: right;
 }
 img
 {
@@ -46,4 +49,9 @@ h1
 h1:hover{
     transform: skew(-45%);
     text-shadow: 15px 15px 5px blue;
+}
+body{
+    border: none;
+    margin: 0px;
+    padding: 0px;
 }
