@@ -55,3 +55,9 @@ body{
     margin: 0px;
     padding: 0px;
 }
+label{
+    width: 150px;
+    padding: 5px;
+    font-size: large;
+    display: inline-block;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Consultations des activites sismiques</h1>    
+    <form action="consultation.php" method="post" onsubmit="verif2()">
+    <div>
+        <label for="">Station: </label>
+        <select name="stat" id="stat">
+            <option value="">choisir une station</option>
+                <option value="Trozza">Trozza</option>
+                <option value="Zaghouan">Zaghouan</option>
+                <option value="El hania">El hania</option>
+                <option value="Sidi bousaid">Sidi bousaid</option>
+
+        </select>
+    </div>
+    <div>
+        <label for="">Annee</label>
+        <input type="radio" name="2022" id="2022"> 2022
+        <input type="radio" name="2023" id="2023"> 2023
+        <input type="radio" name="2024" id="2024"> 2024
+    </div>
+    <div>
+        <input type="reset" name="" id="">
+        <input type="submit" name="" id="">
+    </div>
+    </form>
+</body>
+</html>

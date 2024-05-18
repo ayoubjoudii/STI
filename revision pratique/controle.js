@@ -17,7 +17,14 @@ function AlphaEspace(ch)
     }
     return ok
 }
-
+function valid(n){
+    for (let index = 0; index < n.length; index++) {
+        if (!("0"<= n[index] && n[index]<="9")){
+            return false
+        }
+    return n>0 && n.substr(n.indexOf(",")+1).length == 2       
+    }
+}
 function verif1()
 {
     let sta=document.getElementById('station').selectedIndex
@@ -28,8 +35,8 @@ function verif1()
     let lat=document.getElementById('lat').value
     let long=document.getElementById('long').value
         //Compléter le reste de la fonction
-    d = new Date()
-    dss = new Date(ds)
+    let d = new Date()
+    let dss = new Date(ds)
     
     resultat=true
     if(sta==0)
@@ -43,6 +50,30 @@ function verif1()
     }
     if(!(dss < d)){
         alert("date inf a date")
+        resultat=false
+    }
+    else if(dss = d){
+        let hss = new Date(ds + " " + hs)
+        if(!(hss<hs)){
+            alert("heure inf a heure ")
+            resultat = false
+        }
+    if( isNaN(mag) ||!(mag>=1 && mag<=10) || mag.substr(mag.indexOf(",")+1).length == 1 ){
+        alert("nombre doit enter")
+        resultat = false
+    }
+    if(!valid(lat)){
+        alert("lat positif")
+        resultat = false
+    }
+    if(!valid(long)){
+        alert("longitude positif")
+        resultat = false
+    }
+
+    
+
+        
     }
     return resultat
 }
