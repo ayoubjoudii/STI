@@ -19,16 +19,16 @@ function AlphaEspace(ch)
 }
 function valid(n){
     for (let index = 0; index < n.length; index++) {
-        if (!("0"<= n[index] && n[index]<="9")){
+        if (!("0"<= n[index] && n[index]<="9" || n[index] == ",")){
             return false
         }
-    return n>0 && n.substr(n.indexOf(",")+1).length == 2       
+    return parseFloat(n)>0 && n.indexOf(",") != -1 && n.substr(n.indexOf(",")+1).length == 2       
     }
 }
 function verif1()
 {
-    let sta=document.getElementById('station').selectedIndex
-    let nm=document.getElementById('nm').value
+    let sta=document.getElementById('cit').selectedIndex
+    let nr=document.getElementById('nr').value
     let ds=document.getElementById('ds').value
     let hs=document.getElementById('hs').value
     let mag=document.getElementById('mag').value
@@ -38,45 +38,46 @@ function verif1()
     let d = new Date()
     let dss = new Date(ds)
     
-    resultat=true
     if(sta==0)
     {
         alert("La sélection d'une station est obligatoire")
-        resultat=false
+        return false
     }
-    if(nm=="" || nm>50 || !AlphaEspace(nm) ){
+    if(nr=="" || nr>50 || !AlphaEspace(nr) ){
         alert("nom region")
-        resultat=false
+        return false
     }
     if(!(dss < d)){
         alert("date inf a date")
-        resultat=false
+        return false
     }
-    else if(dss = d){
+    if(hs == ""){
+        alert("whatt")
+        return false
+    }
+    if(dss == d){
         let hss = new Date(ds + " " + hs)
         if(!(hss<hs)){
             alert("heure inf a heure ")
-            resultat = false
-        }
-    if( isNaN(mag) ||!(mag>=1 && mag<=10) || mag.substr(mag.indexOf(",")+1).length == 1 ){
-        alert("nombre doit enter")
-        resultat = false
+            return  false
+        }}
+        if(!(parseFloat(mag)>=1 && parseFloat(mag)<=10) || !(mag.substr(mag.indexOf(",")+1).length == 1) ){
+            alert("nombre doit enter")
+            return  false
     }
     if(!valid(lat)){
         alert("lat positif")
-        resultat = false
+        return  false
     }
     if(!valid(long)){
         alert("longitude positif")
-        resultat = false
+        return  false
     }
 
     
 
         
     }
-    return resultat
-}
 
 function verif2()
 {
@@ -86,18 +87,14 @@ function verif2()
     let ann4 = document.getElementById('2024').checked         
         //Compléter le reste de la fonction
 
-    resultat=true
     if(station==0)
     {
         alert("la sélection d'une station est obligatoire")
-        resultat=false
+        return false
     }
     if(!(ann2 || ann3 || ann4)){
         alert("selectioner pls")
-        resultat = false
+        return  false
     }
 
-        //Compléter le reste de la fonction
-
-    return resultat
 }
