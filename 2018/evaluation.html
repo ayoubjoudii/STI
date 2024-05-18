@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body onload="generercaptcha()">
+    <h1>Evaluation d'un hotel</h1>
+    <form action="evaluation.php" method="post" onsubmit="return verif()">
+        <div>
+            <label for="">Hotel</label>
+            <select name="hot" id="hot">
+                <option value="">choisir un hotel</option>
+                <option value="10">5 stars</option>
+                <option value="20">Globe</option>
+                <option value="30">The sun</option>
+            </select>
+        </div>
+        <table>
+            <tr>
+                <td><h2>Acceuil : </h2></td>
+                <td><input type="radio" value="3" name="a" id="ts">Tres satisfaisant
+                <input type="radio" value="2" name="a" id="s">Satisfaisant
+                <input type="radio" value="1" name="a" id="ps">Peu Satisfaisant
+                </td>
+            </tr>
+            <tr>
+                <td><h2>Restauration : </h2></td>
+                <td><input type="radio" value="3" name="r" id="ts1">Tres satisfaisant
+                <input type="radio" value="2" name="r" id="s1">Satisfaisant
+                <input type="radio" value="1" name="r" id="ps1">Peu Satisfaisant
+                </td>
+            </tr>
+            <tr>
+                <td><h2>Extra : </h2></td>
+                <td><input type="checkbox" value="4" name="e" id="pc">Piscine couverte<br>
+                <input type="checkbox" value="2" name="e" id="pp">Plage privee<br>
+                <input type="checkbox" value="1" name="e" id="cw">Couverture Wifi<br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>
+                        <label for="">Captcha: </label>
+                        <input type="text" name="cap" id="cap" disabled>
+                        <button onclick="generercaptcha()" id="act">Actualiser</button>
+                    </div>
+                    <p>Combien de lettres majuscules dans la zone Captcha</p>
+                    <div>
+                        <label for="">Reponse: </label>
+                        <input type="text" name="capr" id="capr">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <input value="annuler" type="reset" name="" id="">
+        <input value="valider" type="submit" name="" id="">
+    </form>
+    <script src="controle.js"></script>
+</body>
+</html>
