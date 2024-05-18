@@ -6,3 +6,14 @@ th,td{
     border: 1px solid blue;
     font-size: large;
 }
+a:hover{
+    background-color: red;
+    font-size: large;
+    text-decoration: none;
+}
+main{
+    width: 100%;
+}
+iframe{
+    width: 100%;
+}
