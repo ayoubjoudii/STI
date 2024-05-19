@@ -8,12 +8,6 @@ header{
 nav{
     text-align: center;
 }
-a{
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: large;
-    text-decoration: none;
-}
 img{
     width: 90px;
     height: 90px;
@@ -48,15 +42,23 @@ label{
     padding: 5px;
 }
 a:hover{
-   transition-property: ; 
-   transit
+    transform: scale(2) skew(20deg);
+    transition-delay:0.5s ; 
+   transition-duration:1s ; 
+   color: red;
 }
 a:link{
-
+    color: red;
 }
 a:active{
-
+    transform: rotate(40%);
 }
 a:visited{
 
 }
+a{
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: large;
+        text-decoration: none;
+    }
