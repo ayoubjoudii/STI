@@ -27,6 +27,23 @@ aside{
     float: right;
     width: 50%;
 }
-main{
+#mainn{
     width: 50%;
+}
+main{
+    width: 100%;
+    height: 600px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+ol,li,ul{
+    list-style-type: none;
+    display: inline-block;
+}
+label{
+    width: 150px;
+    display: inline-block;
+    padding: 5px;
 }
