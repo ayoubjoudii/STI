@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+header{
+    background-color: aliceblue;
+    height: 100px;
+}
+nav{
+    text-align: center;
+}
+a{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: large;
+    text-decoration: none;
+}
