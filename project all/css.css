@@ -14,3 +14,19 @@ a{
     font-size: large;
     text-decoration: none;
 }
+img{
+    width: 90px;
+    height: 90px;
+}
+cite{
+    float: right;
+    padding: 40px;
+    height: 30px;
+}
+aside{
+    float: right;
+    width: 50%;
+}
+main{
+    width: 50%;
+}
