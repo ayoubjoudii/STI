@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <fieldset>
+        <h1>Proposition d'une offre </h1>
+        <form action="ajout.php" method="post" onsubmit="return verif()">
+           <div>
+            <label for="">Cin : </label>
+            <input type="text" name="cin" id="cin">
+           </div> 
+           <div>
+            <label for="">Nom: </label>
+            <input type="text" name="nom" id="nom">
+           </div>
+           <div>
+            <label for="">Prenom : </label>
+            <input type="text" name="prenom" id="prenom">
+           </div>
+           <div>
+            <label for="">Tel : </label>
+            <input type="text" name="tel" id="tel">
+           </div>
+           <hr>
+           <div>
+            <label for="">Article : </label>
+            <select name="art" id="art">
+                <option value="">selectionner un Article</option>
+                <option value="36">Luth de hedi jouini</option>
+                <option value="45">Manuscrit d'abou el kacem eche</option>
+                <option value="120">Les gants du gardien Attouga</option>
+                <option value="212">Voiture 202 Bh</option>
+            </select>
+           </div>
+           <div>
+            <label for="">Prix propose : </label>
+            <input type="text" name="prx" id="prx">(en DT)
+           </div>
+           <div>
+            <input value="annuler" type="reset" name="" id="">
+            <input value="valider" type="submit" name="" id="">
+           </div>
+        </form>
+    </fieldset>
+    <script src="controle.js"></script>
+</body>
+</html>
