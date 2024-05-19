@@ -47,7 +47,7 @@ h1
     color:red;
 }
 h1:hover{
-    transform: skew(-45%);
+    transform: skew(-45deg);
     text-shadow: 15px 15px 5px blue;
 }
 body{

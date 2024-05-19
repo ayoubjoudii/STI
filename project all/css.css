@@ -41,24 +41,44 @@ label{
     display: inline-block;
     padding: 5px;
 }
+a{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: large;
+    text-decoration: none;
+}
 a:hover{
-    transform: scale(2) skew(20deg);
     transition-delay:0.5s ; 
-   transition-duration:1s ; 
-   color: red;
+    transition-duration:1.5s ; 
+    text-shadow: 20px 15px 15px red ;
+
+    
 }
 a:link{
-    color: red;
+    color: violet;
 }
 a:active{
-    transform: rotate(40%);
+    color: blue;
 }
 a:visited{
+    color: red;
+}
+h1:hover{
+    transition-delay:0.5s ; 
+    transition-duration:1.5s ; 
+    transform: rotate(40deg) skew(20deg);
+}
+h1:active{
+    transform: scale(3)  translate(10%);
 
 }
-a{
-        margin-left: 100px;
-        margin-right: 100px;
-        font-size: large;
-        text-decoration: none;
-    }
+p:hover{
+    text-transform: capitalize;
+}
+p:active{
+    text-transform: uppercase;
+}
+/* #bod{
+    background-image: url("img/360_F_579247368_aYncbxIxhLJZxC2bI70BHL7nLIdOR5OU.jpg");
+    background-repeat: no-repeat;
+} */

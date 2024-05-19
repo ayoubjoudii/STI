@@ -10,7 +10,7 @@ $art = $_POST["art"];
 $prx = $_POST["prx"];
 
 $prix = mysqli_fetch_array(mysqli_query($cnx,"select prixbase from article where codee = '$art'"))[0];
-if((int)$prix < (int)$prx){
+if((int)$prx < (int)$prix){
     die("offre rejete");
 }
 $res = mysqli_query($cnx,"select * from client where cin = '$cin' and nom = '$nom' and prenom = '$prenom' and tel = '$tel'");
